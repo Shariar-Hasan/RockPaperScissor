@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ethico RPS Game</title>
+
+</head>
+
+<body>
+    <div id="alert" class="alert-window">
+        <div class="alert-box col-md-5">
+            <div class="alert-title">
+                <span class="title">Welcome to RPS Game</span>
+                <i onclick="closeAlert()" class="close fas fa-check" aria-hidden="true"></i>
+            </div>
+            <div class="alert-description">
+                <h2>Game Rule</h2>
+                <ul>
+                    <li>Scissor can defeat Paper.</li>
+                    <li>Paper can defeat Rock.</li>
+                    <li>Rock can defeat Scissor.</li>
+                    <li>each win contains 3 point.</li>
+                    <li>each draw contains 1 point.</li>
+                    <li>each lose contains 0 point.</li>
+                    <li>Your score will be updated time by time</li>
+                </ul>
+
+                <label class="d-block my-1">
+                    <b class="my-1">Input your in game name</b>
+                    <input id="inGameName" type="text" class="form-control" placeholder="default name: User">
+                </label>
+                <label class="d-block my-1">
+                    <b class="my-1">How many matches you want to play in competition</b>
+                    <input id="matchNumber" type="text" class="form-control" placeholder="default match: 3">
+                </label>
+            </div>
+        </div>
+    </div>
+    <header class="bg-secondary ">
+        <marquee behavior="scroll" direction="left" loops="infininte">
+            <h2 class="bg-secondary py-2 text-center">A RPS Game</h2>
+        </marquee>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-2">
+                    <div class="field">
+                        <div id="computer-img" class="img">
+
+                        </div>
+                        <h2 id="comment" class="text-white">Game Start</h2>
+                        <div id="user-img" class="img">
+
+                        </div>
+                    </div>
+                    <div class="choice">
+                        <h4 class="text-center">Your choices</h4>
+                        <div id="buttons" class="buttons">
+                            <button id="rockChoice">Rock</button>
+                            <button id="paperChoice">Paper</button>
+                            <button id="scissorChoice">scissor</button>
+                        </div>
+                        <div id="playOrExit" class="buttons">
+                            <button id="playAgain">Play Again</button>
+                            <button id="exit"><a href="https://google.com">Exit</a></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <h1 class="text-center">Leaderboard</h1>
+                    <table class="table text-center">
+                        <tr>
+                            <th>IGN</th>
+                            <th>Total Match</th>
+                            <th>Win</th>
+                            <th>Lose</th>
+                            <th>Draw</th>
+                            <th>Total Points</th>
+                        </tr>
+                        <tr id="user-table">
+
+                        </tr>
+                        <tr id="computer-table">
+
+                        </tr>
+                    </table>
+                    <h2 id="result" class="display-1 text-center"></h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

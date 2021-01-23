@@ -1,0 +1,111 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* alert box edit */
+.alert-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: all .25s ease-in-out;
+}
+.alert-box{
+    max-width: 500px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px;
+}
+.alert-title{
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alert-description{
+    padding: 20px;
+}
+.close{
+    color: white;
+    transition: .3s ease;
+}
+.close:active{
+    transform: scale(.8);
+}
+
+
+
+
+
+.col-lg-6{
+    height: 80vh;
+    border: 1px solid black;
+}
+.field{
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(72, 153, 72);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.img{
+    height: 130px;
+    width: 130px;
+    text-align: center;
+}
+.img img{
+    height: 100%;
+}
+.field #computer-img{
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+}
+.field #user-img{
+    transform: rotateY(180deg);
+}
+.choice{
+    height: 20%;
+    width: 100%;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    transition: all .25s ease-in-out;
+    background-image: linear-gradient(45deg, #0b9eff 50%,#4e565e 50%);
+}
+.buttons button:active{
+    transform: scale(.8);
+}
+.buttons button:hover{
+    background-image: linear-gradient(45deg,#4e565e 50%,#0b9eff 50%);
+}
+
+#playOrExit{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
